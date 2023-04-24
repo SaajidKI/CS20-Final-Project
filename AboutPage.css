@@ -1,0 +1,41 @@
+main { 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 30px;
+}
+
+.card {
+    background-color: #adbbdc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 #00000033;
+    display: inline-block;
+    margin: 30px;
+    padding: 40px;
+    text-align: center;
+    width: 500px;
+    height: 395px;
+    overflow: auto;
+}
+
+.card h3 {
+    font-size: 25px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.card p {
+    color: #091c3d;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1.3;
+}
