@@ -1,120 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="HomePage.css">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato"
-    />
-    <title>MealMatch Homepage</title>
-    <style>
-      body {
-        font-family: "Lato", sans-serif;
-      }
-
-      html {
-        background: url("home_background.jpeg") no-repeat center top fixed;
-        background-size: cover;
-        background-position-y: 100px; /* change this value to adjust how far below the top the image starts */
-      }
-
-    .container {
-      background-color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
-      height: 85px;
-    }
-
-    h1 {
-      color: #333;
-      margin: 0 0 0 44%;
-      font-size: 40px;
-      font-weight:1000;
-    }
-
-    .header_container {
-      display: flex;
-      align-items: center;
-    }
-
-    .header_container>a {
-      margin: 10px;
-      padding: 10px;
-      font-size: 20px;
-      text-decoration: none;
-      color: #333;
-    }
-
-    h2 {
-      text-align: center;
-      color: white;
-      font-size: 40px;
-      font-weight: bolder;
-      margin-top: 200px;
-      margin-bottom: 50px;
-    }
-
-    form {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-      color: black;
-      font-size: 20px;
-      font-weight: bolder;
-    }
-
-    input[type="text"],
-    input[type="number"] {
-      display: block;
-      align-content: center;
-      width: 100%;
-      padding: 10px 0px 10px 5px;
-      border-radius: 5px;
-      border: none;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    button[type="submit"] {
-      background-color: #d21312;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    }
-
-    button[type="submit"]:hover {
-      background-color: #8b0000;
-    }
-
-    #submit_button {
-      text-align: center;
-    }
-  </style>
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <title>Home | MealMatch</title>
 </head>
 
 <body>
-
   <div class="container">
     <h1>MealMatch</h1>
     <div class="header_container">
@@ -122,13 +16,12 @@
       <a href="ContactPge.html">Contact Us</a>
       <a href="LoginPage.html">Login</a>
       <a href="CheckoutPage.html">
-        <img src="cart-icon.png" alt="cart" width="50" height="45">
+        <img src="images/cart-icon.png" alt="cart" width="50" height="45">
       </a></p>
     </div>
   </div>
 
   <h2>Find Your Next Favorite Recipe!</h2>
-
   <form action="search.php" method="get">
     <label for="ingredients">Ingredients:</label>
     <input type="text" name="ingredients" id="ingredients" />
