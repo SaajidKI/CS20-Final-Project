@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <title>MealMatch Homepage</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+        background-color: #f9f9f9;
+      }
 
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      h3 {
+        text-align: center;
+        color: #333;
+        margin-top: 140px;
+        margin-bottom: 40px
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #666;
+      }
+
+      input[type="text"],
+      input[type="number"] {
+        display: block;
+        align-content: center;
+        width: 100%;
+        padding: 10px 0px 10px 5px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      button[type="submit"] {
+        background-color: #D21312;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      button[type="submit"]:hover {
+        background-color: #8b0000;
+      }
+
+      #submit_button {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MealMatch</h1>
+    <h3>Find Your Next Favorite Recipe!</h3>
+
+    <form action="search.php" method="get">
+      <label for="ingredients">Ingredients:</label>
+      <input type="text" name="ingredients" id="ingredients" />
+      <label for="cook-time">Cook Time (mins):</label>
+      <input
+        type="number"
+        name="cook-time"
+        id="cook-time"
+        min="1"
+        max="120"
+        step="1"
+      />
+      <div id="submit_button">
+        <button type="submit">Search</button>
+      </div>
+    </form>
+  </body>
+</html>
