@@ -3,24 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
     <title>MealMatch Homepage</title>
     <style>
       body {
         font-family: "Lato", sans-serif;
-        background-color: #f9f9f9;
+      }
+
+      html {
+        background: url("home_background.jpeg") no-repeat center top fixed;
+        background-size: cover;
+        background-position-y: 100px; /* change this value to adjust how far below the top the image starts */
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
       }
 
       h1 {
-        text-align: center;
         color: #333;
+        margin: 0 0 0 45%;
       }
 
-      h3 {
-        text-align: center;
+      .header_container {
+        display: flex;
+        align-items: center;
+      }
+
+      .header_container > a {
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+        text-decoration: none;
         color: #333;
-        margin-top: 140px;
-        margin-bottom: 40px
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
+        margin-top: 200px;
+        margin-bottom: 50px;
       }
 
       form {
@@ -35,7 +64,9 @@
       label {
         display: block;
         margin-bottom: 10px;
-        color: #666;
+        color:black;
+        font-size: 20px;
+        font-weight:bolder;
       }
 
       input[type="text"],
@@ -52,7 +83,7 @@
       }
 
       button[type="submit"] {
-        background-color: #D21312;
+        background-color: #d21312;
         color: #fff;
         padding: 10px 20px;
         border: none;
@@ -73,8 +104,21 @@
     </style>
   </head>
   <body>
-    <h1>MealMatch</h1>
-    <h3>Find Your Next Favorite Recipe!</h3>
+    <!-- <div class="background_image"></div> -->
+
+    <div class="container">
+      <h1>MealMatch</h1>
+      <div class="header_container">
+        <a href="AboutPage.html">About us</a>
+        <a href="ContactPge.html">Contact Us</a>
+        <a href="LoginPage.html">Login</a>
+        <!-- <div>
+          <img src="cart-icon.png" alt="checkout cart">
+        </div> -->
+      </div>
+    </div>
+
+    <h2>Find Your Next Favorite Recipe!</h2>
 
     <form action="search.php" method="get">
       <label for="ingredients">Ingredients:</label>
