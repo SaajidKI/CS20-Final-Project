@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-  background-color: #f2f2f2;
-  font-family: 'Roboto', sans-serif;
+  background-color: #F7DB6A;
+  font-family: 'Lato', sans-serif;
 }
 
 .login-box {
@@ -10,44 +10,57 @@ body {
   height: 400px;
   margin: 200px auto 0;
   padding: 20px;
-  border: 1px solid #ccc;
   background-color: #fff;
-  box-shadow: 5px 5px 5px #ccc;
+  border-radius: 7px;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #5A5A5A;
+  font-size: 30px;
 }
 
 input[type="text"],
 input[type="password"] {
   display: block;
   text-align: left;
-  padding: 18px 0 18px 0;
+  padding: 20px 10px 20px 10px;
   width: 100%;
-  margin: 30px 0 10px 0;
+  margin: 25px 0 10px 0;
+  background-color: #f2f2f2;
+  border-style: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+input::placeholder {
+    opacity: .8;
+    color: gray;
+    padding-left: 5px;
 }
 
 .input {
-    padding: 10px 15px 0 15px;
+  padding: 10px 15px 10px 15px;
+  margin-right: 18px;
 }
 
 button[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #7AA874;
   color: #fff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 20px;
+  padding: 20px 160px 20px 160px;
 }
 
 button[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #539165;
 }
 
 .button {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 35px;
+    margin-left: 3px;
 }
