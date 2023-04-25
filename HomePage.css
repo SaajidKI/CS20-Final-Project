@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
     font-family: "Lato", sans-serif;
@@ -6,9 +6,9 @@ body {
   }
 
   html {
-    background: url("home_background.jpeg") no-repeat center top fixed;
+    background: url("images/home_background.jpeg") no-repeat center top fixed;
     background-size: cover;
-    background-position-y: 100px; /* change this value to adjust how far below the top the image starts */
+    background-position-y: 100px;
   }
 
 .container {
