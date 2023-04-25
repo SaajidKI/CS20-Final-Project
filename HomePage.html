@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="HomePage.css">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato"
-    />
-    <title>MealMatch Homepage</title>
-</head>
-<body>
-  <div class="container">
-    <h1>MealMatch</h1>
-    <div class="header_container">
-      <a href="AboutPage.html">About us</a>
-      <a href="ContactPge.html">Contact Us</a>
-      <a href="LoginPage.html">Login</a>
-      <a href="CheckoutPage.html">
-        <img src="images/cart-icon.png" alt="cart" width="50" height="45">
-      </a></p>
-    </div>
-  </div>
+    <link rel="stylesheet" type="text/css" href="HomePage.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <title>Home | Meal Match</title>
+    <style>
+      footer {
+        position: fixed;
+      }
+    </style>
+  </head>
 
-  <h2>Find Your Next Favorite Recipe!</h2>
-  <form action="search.php" method="get">
-    <label for="ingredients">Ingredients:</label>
-    <input type="text" name="ingredients" id="ingredients" />
-    <label for="cook-time">Cook Time (mins):</label>
-    <input type="number" name="cook-time" id="cook-time" min="1" max="120" step="1" />
-    <div id="submit_button">
-      <button type="submit">Search</button>
+  <body>
+    <div class="container">
+      <a href="HomePage.html">
+        <img src="images/logo.png" alt="logo" class="logo" />
+      </a>
+      <h1>Meal Match</h1>
+      <div class="header_container">
+        <a href="AboutPage.html">About Us</a>
+        <a href="ContactPge.html">Contact Us</a>
+        <a href="LoginPage.html">Login</a>
+        <a href="CheckoutPage.html">
+          <img src="images/cart-icon.png" alt="cart" width="50" height="45" />
+        </a>
+      </div>
     </div>
-  </form>
-</body>
 
+    <h2>Find Your Next Favorite Recipe!</h2>
+    <form action="search.php" method="get">
+      <label for="ingredients">Ingredients:</label>
+      <input type="text" name="ingredients" id="ingredients" />
+      <label for="cook-time">Preferred Cook Time (mins):</label>
+      <input
+        type="number"
+        name="cook-time"
+        id="cook-time"
+        min="1"
+        max="120"
+        step="1"
+      />
+      <div id="submit_button">
+        <button type="submit">Search</button>
+      </div>
+    </form>
+  </body>
+
+  <footer>
+    <p>&copy; 2023 Meal Match Inc. All Rights Reserved.</p>
+  </footer>
 </html>
