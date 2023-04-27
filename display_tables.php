@@ -22,6 +22,14 @@ function fetch_saved_recipes_data($conn) {
     $result = $conn->query($sql);
     return $result;
 }
+
+function fetch_users($conn) {
+    $sql = "SELECT * FROM users";
+    $result = $conn->query($sql);
+    return $result;
+}
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -46,6 +54,7 @@ function fetch_saved_recipes_data($conn) {
             <th>User ID</th>
             <th>Recipe Name</th>
             <th>Recipe URL</th>
+            <th>Image URL</th>
         </tr>
         <?php
         $checkout_data = fetch_checkout_data($conn);
@@ -55,6 +64,7 @@ function fetch_saved_recipes_data($conn) {
             echo "<td>" . $row["user_id"] . "</td>";
             echo "<td>" . $row["recipe_name"] . "</td>";
             echo "<td>" . $row["recipe_url"] . "</td>";
+            echo "<td>" . $row["image_url"] . "</td>";
             echo "</tr>";
         }
         ?>
@@ -76,6 +86,24 @@ function fetch_saved_recipes_data($conn) {
             echo "<td>" . $row["user_id"] . "</td>";
             echo "<td>" . $row["recipe_name"] . "</td>";
             echo "<td>" . $row["recipe_url"] . "</td>";
+            echo "<td>" . $row["image_url"] . "</td>";
+            echo "</tr>";
+        }
+        ?>
+    </table>
+
+    <h1>Users</h1>
+    <table>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+        </tr>
+        <?php
+        $users_data = fetch_users($conn);
+        while ($row = $users_data->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row["username"] . "</td>";
+            echo "<td>" . $row["password"] . "</td>";
             echo "</tr>";
         }
         ?>
