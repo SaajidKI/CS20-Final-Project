@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="ContactPage.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <title>Contact Us | Meal Match</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="HomePage.html">
+        <img src="images/logo.png" alt="logo" class="logo" />
+      </a>
+      <h1>Meal Match</h1>
+      <div class="header_container">
+        <a href="AboutPage.html">About Us</a>
+        <a href="ContactPage.html" class="active">Contact Us</a>
+        <a href="FavoritesPage.php">Favorites</a>
+        <a href="CheckoutPage.php">
+          <img src="images/cart-icon.png" alt="cart" width="50" height="45" />
+        </a>
+      </div>
+    </div>
+
+    <div class="contact_container">
+      <div class="contact_info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 420 Web Street, Tufts USA 12345</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> meal@match.com</p>
+      </div>
+      <div class="recipe_request">
+        <h2>Request a Recipe</h2>
+        <form action="RecipeRequest.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+          <label for="recipe_name">Recipe Name:</label>
+          <input type="text" name="recipe_name" id="recipe_name" />
+          <label for="ingredients">Ingredients:</label>
+          <textarea name="ingredients" id="ingredients" rows="5"></textarea>
+          <label for="instructions">Instructions:</label>
+          <textarea name="instructions" id="instructions" rows="5"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Meal Match Inc. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
