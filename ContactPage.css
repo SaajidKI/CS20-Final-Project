@@ -84,4 +84,6 @@
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
